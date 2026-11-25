@@ -1,0 +1,37 @@
+[build-system]
+requires = ["setuptools>=68.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ai-media-cost-guard"
+version = "1.0.0"
+description = "Pre-flight credit/USD cost simulator and approval budget gate for generative image, video, TTS, and 3D AI pipelines."
+readme = "README.md"
+license = { text = "MIT" }
+requires-python = ">=3.10"
+authors = [
+  { name = "Tarik", email = "tarikra1@users.noreply.github.com" }
+]
+keywords = ["ai-safety", "cost-estimation", "finops", "generative-ai", "agents", "budget-guard"]
+classifiers = [
+  "Development Status :: 5 - Production/Stable",
+  "Intended Audience :: Developers",
+  "License :: OSI Approved :: MIT License",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+]
+dependencies = []
+
+[project.urls]
+Homepage = "https://github.com/tarikra1/ai-media-cost-guard"
+Repository = "https://github.com/tarikra1/ai-media-cost-guard"
+Changelog = "https://github.com/tarikra1/ai-media-cost-guard/blob/main/CHANGELOG.md"
+Issues = "https://github.com/tarikra1/ai-media-cost-guard/issues"
+
+[project.scripts]
+cost-guard = "ai_media_cost_guard.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
